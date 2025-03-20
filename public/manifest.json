@@ -1,0 +1,16 @@
+{
+  "name": "Kuyumcu Faturası Hesaplama",
+  "short_name": "Kuyum Fatura",
+  "description": "Kuyumcu faturası için altın hesaplama uygulaması",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2D2D2D",
+  "theme_color": "#F0B90B",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}
