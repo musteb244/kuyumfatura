@@ -44,17 +44,17 @@ const CalculationResult: React.FC<CalculationResultProps> = ({
         
         <div className="calculation-row">
           <span className="calculation-label w-32 text-left">{karat}K FİYATI</span>
-          <span className="calculation-value">{formatNumber(data.price)} ₺</span>
+          <span className="calculation-value">{formatNumber(data.price)}</span>
         </div>
         
         <div className="calculation-row">
           <span className="calculation-label w-32 text-left">{karat}K İŞÇİLİK</span>
-          <span className="calculation-value">{formatNumber(data.workmanship)} ₺</span>
+          <span className="calculation-value">{formatNumber(data.workmanship)}</span>
         </div>
         
         <div className="calculation-row">
           <span className="calculation-label w-32 text-left">İŞÇİLİK+KDV</span>
-          <span className="calculation-value">{formatNumber(data.workmanshipWithKDV)} ₺</span>
+          <span className="calculation-value">{formatNumber(data.workmanshipWithKDV)}</span>
         </div>
       </div>
     </div>

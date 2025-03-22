@@ -20,7 +20,7 @@ const Gold24kResult: React.FC<Gold24kResultProps> = ({ data, animationDelay }) =
       style={{ animationDelay }}
     >
       <div className="flex justify-between items-center mb-2">
-        <h3 className="text-xl font-bold text-gold-24k">24 AYAR</h3>
+        <h3 className="text-xl font-bold" style={{ color: '#37e8da' }}>24 AYAR</h3>
         <div className="h-3 w-3 rounded-full bg-gradient-to-br from-gold-24k to-blue-400 animate-pulse-subtle"></div>
       </div>
       
@@ -32,17 +32,17 @@ const Gold24kResult: React.FC<Gold24kResultProps> = ({ data, animationDelay }) =
         
         <div className="calculation-row">
           <span className="calculation-label w-32 text-left">24K FİYATI</span>
-          <span className="calculation-value">{formatNumber(data.price)} ₺</span>
+          <span className="calculation-value">{formatNumber(data.price)}</span>
         </div>
         
         <div className="calculation-row">
           <span className="calculation-label w-32 text-left">HAVALE</span>
-          <span className="calculation-value">{formatNumber(data.transfer)} ₺</span>
+          <span className="calculation-value">{formatNumber(data.transfer)}</span>
         </div>
         
         <div className="calculation-row">
           <span className="calculation-label w-32 text-left">NAKİT</span>
-          <span className="calculation-value">{formatNumber(data.cash)} ₺</span>
+          <span className="calculation-value">{formatNumber(data.cash)}</span>
         </div>
       </div>
     </div>

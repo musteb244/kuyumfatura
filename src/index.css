@@ -45,7 +45,7 @@
   }
 
   body {
-    @apply bg-[#0C0E12] text-foreground;
+    @apply bg-binance-background text-binance-foreground;
     background-image: radial-gradient(circle at 50% 0%, rgba(251, 204, 37, 0.1) 0%, transparent 50%);
     background-attachment: fixed;
   }
@@ -63,17 +63,17 @@
 
 @layer components {
   .glass-panel {
-    @apply bg-[#151A23]/90 rounded-lg border border-[#2B3139] backdrop-blur-lg shadow-soft;
+    @apply bg-binance-panel rounded-lg border border-gray-700 backdrop-blur-lg shadow-soft;
   }
   
   .neo-button {
-    @apply bg-[#F0B90B] hover:bg-[#F0B90B]/90 text-black rounded-lg px-4 py-2 transition-all shadow-neo 
+    @apply bg-binance-primary hover:bg-yellow-400 text-black rounded-lg px-4 py-2 transition-all shadow-neo 
     hover:shadow-glow transform hover:-translate-y-1 active:translate-y-0 active:shadow-inner;
   }
   
   .input-field {
-    @apply bg-[#1E2230]/80 border border-[#2B3139] text-white rounded-md px-4 py-1.5
-    focus:ring-2 focus:ring-[#F0B90B] focus:outline-none shadow-input backdrop-blur-sm
+    @apply bg-binance-secondary/80 border border-gray-700 text-white rounded-md px-4 py-1.5
+    focus:ring-2 focus:ring-binance-primary focus:outline-none shadow-input backdrop-blur-sm
     transition-all duration-200;
   }
   
@@ -86,7 +86,7 @@
   }
   
   .calculation-row {
-    @apply flex justify-between items-center py-1 border-b border-[#2B3139] last:border-0;
+    @apply flex justify-between items-center py-1 border-b border-gray-700 last:border-0;
   }
   
   .calculation-label {

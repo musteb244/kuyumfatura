@@ -22,15 +22,15 @@ export default {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
-        background: 'hsl(var(--background))',
+        background: '#0B132B', // Dark blue background
         foreground: 'hsl(var(--foreground))',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))'
+          DEFAULT: '#5BC0BE', // Light blue primary color
+          foreground: '#0B132B'
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))'
+          DEFAULT: '#3A506B', // Darker blue secondary color
+          foreground: '#FFFFFF'
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
@@ -41,16 +41,16 @@ export default {
           foreground: 'hsl(var(--muted-foreground))'
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))'
+          DEFAULT: '#6FFFE9', // Teal accent color
+          foreground: '#000000'
         },
         popover: {
           DEFAULT: 'hsl(var(--popover))',
           foreground: 'hsl(var(--popover-foreground))'
         },
         card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))'
+          DEFAULT: '#1C2541', // Dark card background
+          foreground: '#FFFFFF'
         },
         gold: {
           '24k': '#F2F200',
@@ -58,12 +58,14 @@ export default {
           '14k': '#B3F56D',
           '8k': '#F96B1B',
         },
-        finance: {
-          primary: '#2D2D2D',
-          secondary: '#1a2146',
-          accent: '#3C6EFD',
-          surface: '#0F1535',
-          panel: 'rgba(15, 23, 59, 0.7)',
+        binance: {
+          primary: '#f0b90b', // Binance Yellow
+          background: '#121212', // Very dark gray
+          foreground: '#f3f3f3', // Light gray
+          secondary: '#212121', // Slightly lighter dark gray
+          surface: '#1a1a1a', // Dark gray surface
+          panel: 'rgba(33, 33, 33, 0.7)', // Semi-transparent dark gray
+          accent: '#f0b90b',
         },
       },
       borderRadius: {
@@ -123,7 +125,7 @@ export default {
         'card': '0 8px 24px rgba(0, 0, 0, 0.12)',
         'neo': '5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.05)',
         'input': 'inset 0 1px 3px rgba(0, 0, 0, 0.1)',
-        'glow': '0 0 15px rgba(60, 110, 253, 0.5)',
+        'glow': '0 0 15px rgba(240, 185, 11, 0.5)',
       },
       backdropFilter: {
         'glass': 'blur(10px)',

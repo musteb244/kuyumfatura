@@ -15,23 +15,30 @@ const Header: React.FC<HeaderProps> = ({ onOpenSettings, onOpenVisibility }) => 
         <h1 className="text-lg font-semibold text-white">KUYUM FATURA</h1>
       </div>
       <div className="flex space-x-2">
-        <Button 
-          variant="outline" 
-          size="icon" 
-          className="bg-finance-secondary border-white/10 hover:bg-finance-accent/80 hover:border-white/20 transition-all duration-300"
+        <Button
+          variant="outline"
+          size="icon"
+          className="bg-binance-secondary border-white/10 hover:bg-binance-accent/80 hover:border-white/20 transition-all duration-300"
           onClick={onOpenVisibility}
         >
           <Eye className="h-5 w-5" />
           <span className="sr-only">Panel Seçimi</span>
         </Button>
-        <Button 
-          variant="outline" 
-          size="icon" 
-          className="bg-finance-secondary border-white/10 hover:bg-finance-accent/80 hover:border-white/20 transition-all duration-300"
+        <Button
+          variant="outline"
+          size="icon"
+          className="bg-binance-secondary border-white/10 hover:bg-binance-accent/80 hover:border-white/20 transition-all duration-300"
           onClick={onOpenSettings}
         >
           <Settings className="h-5 w-5" />
           <span className="sr-only">Ayarlar</span>
+        </Button>
+        <Button
+          variant="outline"
+          className="bg-binance-secondary border-white/10 hover:bg-binance-accent/80 hover:border-white/20 transition-all duration-300"
+          onClick={() => {}}
+        >
+          BANKA HESAPLARI
         </Button>
       </div>
     </header>

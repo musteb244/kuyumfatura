@@ -1,3 +1,7 @@
+body {
+  color: white; /* Set default text color to white */
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -11,9 +15,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #F0B90Baa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #F0B90Baa);
 }
@@ -22,6 +28,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +46,35 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Custom styles for 3D appearance */
+.gold-card {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #3A506B, rgba(0, 0, 0, 0)) 1 10%;
+  background: linear-gradient(to bottom, #1C2541, #0B132B);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gold-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.calculation-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.calculation-label {
+  font-weight: bold;
+  color: #6FFFE9;
+}
+
+.calculation-value {
+  color: #5BC0BE;
 }
